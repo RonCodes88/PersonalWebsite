@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ronald's Personal Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+    <link rel="shortcut icon" type="image/png" href="images/final-logo.png" />
     <script
       src="https://kit.fontawesome.com/4588763151.js"
       crossorigin="anonymous"
@@ -14,11 +16,11 @@
     <div id="header">
       <div class="container">
         <nav>
-          <img src="images/logo.png" class="logo" />
+          <img src="images/final-logo.png" class="logo" />
           <ul id="sidemenu">
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#services">My Services</a></li>
+            <li><a href="#expertise">My Expertise</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contacts</a></li>
             <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
@@ -27,10 +29,8 @@
         </nav>
         <div class="header-text">
           <p>Software Engineer</p>
-          <h1>
-            Hi, I'm <span>Yi Hao (Ronald) Li</span>,<br />and I study Computer
-            Science<br />at San Jose State University.
-          </h1>
+          <h1 class="line1">Hi, I'm Yi Hao (Ronald) Li and I study</h1>
+          <h1 class="line2">Computer Science at SJSU.</h1>
         </div>
       </div>
     </div>
@@ -43,7 +43,7 @@
           </div>
           <div class="about-col-2">
             <h1 class="sub-title">About me</h1>
-            <p>Introduction Description here</p>
+            <p>Hello! Welcome to my personal portfolio. My interests with Computer Science are with full stack development and ML/AI. Come check out my recent projects. </p>
 
             <div class="tab-titles">
               <p class="tab-links active-link" onclick="opentab('education')">
@@ -66,7 +66,7 @@
                   Structures<br />
                   Data Structures and Algorithms<br />Introduction to Database
                   Management Systems<br />
-                  Introduction to Computer Systems<br />AP Computer Science A
+                  Object Oriented Design<br />AP Computer Science A
                 </li>
               </ul>
             </div>
@@ -95,21 +95,24 @@
               </ul>
             </div>
             <p>
-              For more details, feel free to check out my
+              <br><br>
+              For more details, feel free to check out my resume
               <a
-                href="https://docs.google.com/document/d/1TSyHZzzqyG5b5pSLUulHEUG2OLHwmbP3Zxq3_IDgMlo/edit?usp=sharing"
-                >resume</a
+                href="https://docs.google.com/document/d/1cnGqHWQDovWWMpgXkOg1e4mmY6dA-KJiU27UqL5aDtk/edit?usp=sharing"
+                class="btn btn3" 
+                target="blank"
+                >Resume</a
               >
             </p>
           </div>
         </div>
       </div>
     </div>
-    <!-- ---------services-------- -->
-    <div id="services">
+    <!-- ---------expertise-------- -->
+    <div id="expertise">
       <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
+        <h1 class="sub-title">My Expertise</h1>
+        <div class="expertise-list">
           <div>
             <i class="fa-solid fa-code"></i>
             <h2>Web Design</h2>
@@ -153,7 +156,7 @@
           <div class="work">
             <img src="images/work-2.png" />
             <div class="layer">
-              <h3>Machine Learning Model</h3>
+              <h3>Deep Learning Model</h3>
               <p>This model detects malware from different families.</p>
               <a href="#"
                 ><i class="fa-solid fa-arrow-up-right-from-square"></i
@@ -178,65 +181,78 @@
       </div>
     </div>
 
-<!-- ----------contact--------- -->
-<div id="contact">
-    <div class="container">
+    <!-- ----------contact--------- -->
+    <div id="contact">
+      <div class="container">
         <div class="row">
           <div class="contact-left">
             <h1 class="sub-title">Contact Me</h1>
-            <p><i class="fa-solid fa-paper-plane"></i> ronald.yihao@gmail.com</p>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i> ronald.yihao@gmail.com
+            </p>
             <p><i class="fa-solid fa-square-phone"></i> 510-366-7327</p>
             <div class="social-icons">
-              <a href="https://www.linkedin.com/in/ronaldli666/" target="blank"><i class="fa-brands fa-linkedin"></i></a>
-              <a href="https://www.instagram.com/lo.o_o_o.ol/"  target="blank"><i class="fa-brands fa-instagram"></i></a>
-              <a href="https://github.com/RonCodes88"  target="blank"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/ronaldli666/" target="blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://www.instagram.com/lo.o_o_o.ol/" target="blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://github.com/RonCodes88" target="blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
             </div>
-            <a href="images/Dec. 2023 Resume - Yi Hao (Ronald) Li.pdf" download class="btn btn2">Download Resume </a>
+            <a
+              href="images/Dec. 2023 Resume - Yi Hao (Ronald) Li.pdf"
+              download
+              class="btn btn2"
+              >Download Resume
+            </a>
           </div>
           <div class="contact-right">
-            <form>
-              <input type="text" name="name" placeholder="Your Name" required>
-              <input type="email" name="email" placeholder="Your Email" required>
-              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
               <button type="submit" class="btn btn2">Submit</button>
             </form>
-            <span id="msg">Submitted!</span>
+            <span id="msg"></span>
           </div>
         </div>
+      </div>
     </div>
-</div>
-<div class="copyright">
-  <p>Copyright <i class="fa-solid fa-copyright"></i> Made with <i class="fa-regular fa-heart"></i> by Ronald</p>
-</div>
-
-<script>
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
-
-      function opentab(tabname) {
-        for (tablink of tablinks) {
-          tablink.classList.remove("active-link");
-        }
-        for (tabcontent of tabcontents) {
-          tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-      }
+    <div class="copyright">
+      <p>
+        Copyright <i class="fa-solid fa-copyright"></i> Made with
+        <i class="fa-regular fa-heart"></i> by Ronald
+      </p>
+    </div>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwxiZEgcblJpygas_v07Ujb4MDbSRWEX-YA_XOPSsaHLYisJhf66V8FOKdmaq97BQo/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully.";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
     </script>
-
-  <script>
-      var sidemenu = document.getElementById("sidemenu");
-
-      function openmenu(){
-          sidemenu.style.right = "0";
-      }
-
-      function closemenu(){
-          sidemenu.style.right = "-200px";
-      }
-
-  </script>
-
   </body>
 </html>
